@@ -1,0 +1,38 @@
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\contentsline {chapter}{Lista de Figuras}{iv}{chapter*.4}
+\contentsline {chapter}{Lista de Tabelas}{v}{chapter*.5}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Objetivo geral}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Objetivos espec\IeC {\'\i }ficos}{2}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Justificativa}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}A empresa}{4}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Col\IeC {\'e}gio Damas Santa Sofia}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Funda\IeC {\c c}\IeC {\~a}o da Rede Damas}{6}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Damas no Brasil}{7}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do relat\IeC {\'o}rio}{7}{section.1.4}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}A ITIL}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Gerenciamento de processos}{8}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Modelo de refer\IeC {\^e}ncia e a ITIL}{9}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Gerenciamento de configura\IeC {\c c}\IeC {\~a}o}{11}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Central de servi\IeC {\c c}os}{12}{subsection.2.1.4}
+\contentsline {chapter}{\numberline {3}Atividades Desenvolvidas}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}An\IeC {\'a}lise de requisitos}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Recurso utilizados (Hardware e Software)}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}Sobre o ITOP}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}Trabalhando com ITOP}{17}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Defini\IeC {\c c}\IeC {\~a}o das estruturas das organiza\IeC {\c c}\IeC {\~o}es da empresa. }{17}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Cria\IeC {\c c}\IeC {\~a}o das localiza\IeC {\c c}\IeC {\~o}es}{18}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Cria\IeC {\c c}\IeC {\~a}o das pessoas(usu\IeC {\'a}rios do sistema)}{19}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Cria\IeC {\c c}\IeC {\~a}o dos itens de configura\IeC {\c c}\IeC {\~a}o}{21}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Cria\IeC {\c c}\IeC {\~a}o do cat\IeC {\'a}logo de servi\IeC {\c c}os}{22}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Defini\IeC {\c c}\IeC {\~a}o de objetivos de n\IeC {\'\i }veis de servi\IeC {\c c}os e acordo de n\IeC {\'\i }veis de servi\IeC {\c c}os}{23}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Cria\IeC {\c c}\IeC {\~a}o dos contratos com os clientes }{25}{subsection.3.4.7}
+\contentsline {subsection}{\numberline {3.4.8}Defini\IeC {\c c}\IeC {\~a}o do modelo de entrega}{26}{subsection.3.4.8}
+\contentsline {subsection}{\numberline {3.4.9}Cria\IeC {\c c}\IeC {\~a}o dos perfis de acessos}{27}{subsection.3.4.9}
+\contentsline {subsection}{\numberline {3.4.10}Detalhamentos das atividades executadas}{28}{subsection.3.4.10}
+\contentsline {chapter}{\numberline {4}Conclus\IeC {\~o}es}{32}{chapter.4}
+\contentsline {chapter}{Bibliografia}{32}{chapter.4}
