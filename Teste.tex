@@ -1,8 +1,10 @@
 \documentclass[12pt]{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage{amssymb}
 \usepackage[brazilian]{babel}
 \usepackage{graphicx}
+\usepackage { anysize } 
 \begin{document}
 
 \title{Redução de Dimensionalidade usando uma modificação do algoritmo Autofaces Fracionário}
@@ -19,23 +21,88 @@ Este trabalho visa expor os resultados da modificação do algoritmo Autofaces F
 
 \section{Introdução}
 
-PCA (Principal Component Analysis, em português Análise dos Componentes Principais) é  uma técnica de redução de dimensionalidade que, dado um dataset $D$ com dimensão $m$, produz uma projeção de $D$ no espaço de dimensionalidade $n$, sendo $n < m$.
-A partir do dataset original, o PCA calcula uma matriz de covariância, que é dada pela fórmula:
+No contexto de redução de dimensionalidade, o termo \textit{dimensionalidade} se refere a quantidade de variáveis aleatórias que um determinado conjunto de dados possui. Assim, se uma amostra $x\textsubscript{i}$ é definida por
 
-        $$\Sigma x = 1/n X^t X$$
+$$
+x\textsubscript{i} = [\alpha\textsubscript{1},\alpha\textsubscript{2},...,\alpha\textsubscript{n}]
+$$
 
-    Cada coluna da matriz resultante é um autovetor, e a cada autovetor temos um autovalor associado. Esses autovalores representam a variância dos dados para o eixo associado com a direção do autovetor. Dessa forma, o PCA nos fornece os eixos onde se concentra a maior variabilidade dos dados, assim como a segunda maior e assim por diante.
-    A redução de dimensionalidade se dá quando projetamos os dados nas k direções de maior variância, sendo k uma parâmetro que representa o número de componentes que serão considerados.
-
-
+dizemos que a amostra $x\textsubscript{i}$ possui dimensionalidade $n$, sendo que $n \in \mathbb{N}\textsuperscript{*} $.\linebreak
+\indent A redução de dimensionalidade acontece quando conseguimos diminuir o número de atributos do conjunto original de modo que ainda tenhamos uma versão que seja representativa dos dados originais.\linebreak
+\indent Para o Aprendizado de Máquina, a importância da redução de dimensionalidade consiste em poder submeter para os algoritmos apenas os atributos que sejam mais relevantes no que se refere ao manuseio dos dados.
 
 \section{Algoritmos Relacionados}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. Sed sollicitudin leo at urna dapibus cursus. Vestibulum nibh dui, tristique vitae mollis tristique, sagittis pretium justo. Nulla faucibus suscipit dolor eu semper. Nam nisl lacus, tempor quis nisi vitae, dictum sollicitudin dolor. Vivamus quis elit consequat, ullamcorper ligula non, ultricies enim. Proin dictum leo eget tempor placerat. Cras dapibus eget lorem sed malesuada. Mauris lobortis iaculis purus, eu varius neque lacinia et. Vivamus gravida nisl in pellentesque molestie. Aliquam sit amet urna ut nulla faucibus eleifend sit amet sed nibh. Nam porta leo sed enim interdum posuere. Duis purus diam, volutpat vel luctus sit amet, venenatis at lacus. 
+Muitos métodos têm sido propostos a fim de melhorar a qualidade dos algoritmos de redução de dimensionalidade. Alguns deles derivam do método algébrico PCA, o qual é conhecido como o mais bem estabelecido na literatura. Nessa secção falaremos sobre o funcionamento do PCA e três métodos derivados dele: FPCA, Autofaces e Autofaces Fracionário.
 
 \subsection{PCA}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. Sed sollicitudin leo at urna dapibus cursus. Vestibulum nibh dui, tristique vitae mollis tristique, sagittis pretium justo. Nulla faucibus suscipit dolor eu semper. Nam nisl lacus, tempor quis nisi vitae, dictum sollicitudin dolor. Vivamus quis elit consequat, ullamcorper ligula non, ultricies enim. Proin dictum leo eget tempor placerat. Cras dapibus eget lorem sed malesuada. Mauris lobortis iaculis purus, eu varius neque lacinia et. Vivamus gravida nisl in pellentesque molestie. Aliquam sit amet urna ut nulla faucibus eleifend sit amet sed nibh. Nam porta leo sed enim interdum posuere. Duis purus diam, volutpat vel luctus sit amet, venenatis at lacus. 
+PCA (Principal Component Analysis, em português Análise dos Componentes Principais) é  uma técnica de redução de dimensionalidade que ao receber como entrada um dataset $D$ com dimensão $m$, produz uma projeção de $D$ no espaço de dimensionalidade $m\textsuperscript{'}$, sendo $m\textsuperscript{'} < m$.
+
+Seja $D$ uma matriz que contém os dados a serem reduzidos. Temos que a matriz $D$, contendo $n$ amostras é definida como
+
+$$
+D = \left[
+\begin{array}{l}
+x\textsubscript{1}\\
+x\textsubscript{2}\\
+x\textsubscript{3}\\
+\vdots\\
+x\textsubscript{n}
+\end{array}
+\right]
+$$
+
+Cada amostra $x\textsubscript{i}$ contém $m$ varíáveis, as quais chamamos de atributos. Desta forma temos
+
+$$
+x\textsubscript{i} = \left[
+\begin{array}{cccc}
+x\textsubscript{i1}, &
+x\textsubscript{i2}, &
+..., &
+x\textsubscript{im}
+\end{array}
+\right]
+$$
+
+O vetor médio $\overline{x}$ é do conjunto de dados é obtido através da fórmula:
+
+$$
+\overline{x} = \frac{1}{n} \Sigma x\textsubscript{j}
+$$
+
+Subtraindo o vetor médio de cada amostra de $D$, teremos uma versão do dados centralizada na origem:
+
+$$
+D\textsuperscript{'} = \left[
+\begin{array}{l}
+(x\textsubscript{1} - \overline{x})\\
+(x\textsubscript{2} - \overline{x})\\
+(x\textsubscript{3} - \overline{x})\\
+\vdots\\
+(x\textsubscript{n} - \overline{x})
+\end{array}
+\right]
+$$
+
+A partir de $D\textsuperscript{'}$ é possível obter a matriz de covariância dos dados. Essa matriz contém o valor da covariância entre cada par de atributos, bem como a variância de cada atributo na diagonal principal. Ela pode ser obtida através de
+
+$$
+Cov(D\textsuperscript{'}) = \frac{1}{n} D\textsuperscript{'T} D\textsuperscript{'}
+$$
+
+A matriz $Cov(D\textsuperscript{'})$ será de ordem $m x m$.
+
+Cada coluna da matriz $Cov(D\textsuperscript{'})$ é uma autovetor. Dessa forma temos que
+
+$$
+Cov(D\textsuperscript{'}) = [\xi\textsubscript{1}, \xi\textsubscript{2}, ..., \xi\textsubscript{m}]
+$$
+
+Onde para cada autovetor $\xi\textsubscript{i}$ existe um autovelor $\lambda\textsubscript{i}$ associado, o qual representa a variância daquele atributo.
+
+NÂO CONCLUIDO
 
 \subsection{PCA Fracionário}
 
@@ -55,18 +122,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem n
 
 \section{Método Proposto}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. Sed sollicitudin leo at urna dapibus cursus. Vestibulum nibh dui, tristique vitae mollis tristique, sagittis pretium justo. Nulla faucibus suscipit dolor eu semper. Nam nisl lacus, tempor quis nisi vitae, dictum sollicitudin dolor. Vivamus quis elit consequat, ullamcorper ligula non, ultricies enim. Proin dictum leo eget tempor placerat. Cras dapibus eget lorem sed malesuada. Mauris lobortis iaculis purus, eu varius neque lacinia et. Vivamus gravida nisl in pellentesque molestie. Aliquam sit amet urna ut nulla faucibus eleifend sit amet sed nibh. Nam porta leo sed enim interdum posuere. Duis purus diam, volutpat vel luctus sit amet, venenatis at lacus. 
-
+O método proposto consiste em modificar o Autoface Fracionário por meio da aplicação de um vetor $R$ no lugar da escalar $r$. Cada elemento de $R$ seria aplicado sobre uma fração da amostra. Para o caso específico de imagens, um vetor $R$ de comprimento $n$ implicaria que a amostra seria dividida em uma matriz $\sqrt{n}x\sqrt{n}$. Assim teríamos uma variação maior do parâmetro $r$ original do Autofaces Fracionário sobre a amostra de entrada.\newline
+\indent
+Para a obtenção do vetor $R$, foi usado um Algoritmo Genético com o objetivo de se conseguir bons valores para o vetor e que por consequência melhorasse a qualidade da redução de dimensionalidade e por conseguinte a acurácia do algoritmo de classificação utilizado.
 \section{Experimentos}
 
 \subsection{Metodologia Adotada}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. Sed sollicitudin leo at urna dapibus cursus. Vestibulum nibh dui, tristique vitae mollis tristique, sagittis pretium justo. Nulla faucibus suscipit dolor eu semper. Nam nisl lacus, tempor quis nisi vitae, dictum sollicitudin dolor. Vivamus quis elit consequat, ullamcorper ligula non, ultricies enim. Proin dictum leo eget tempor placerat. Cras dapibus eget lorem sed malesuada. Mauris lobortis iaculis purus, eu varius neque lacinia et. Vivamus gravida nisl in pellentesque molestie. Aliquam sit amet urna ut nulla faucibus eleifend sit amet sed nibh. Nam porta leo sed enim interdum posuere. Duis purus diam, volutpat vel luctus sit amet, venenatis at lacus.
+A metodologia dos experimentos realizados para calcular os valores do vetor $R$ pode ser conferida no fluxograma da figura 1. Após a obtenção do vetor $R$, uma outro algoritmo é executado a fim de comparar os desempenhos do Autofaces Fracionário e do Autofaces Fracionário proposto. Esse algoritmo pode ser observado na figura 2.\\
+\indent Os valores de componentes testados em cada execução do Algoritmo Genético foram os seguintes:
+
+$$c = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]$$
+
+Assim, cada experimento executou um Algoritmo Genético 15 vezes, uma para cada número de componentes. Além disso, cada execução do AG resultava em um vetor R para algum número de componentes considerado no momento.
+
+\begin{figure}[!h] \centering
+\includegraphics[scale=0.7]{diagrama1.png}
+\caption{Digrama do algoritmo genético utilizado para obter valores de $R$.}
+\end{figure}
+
+\begin{figure}[!h] \centering
+\includegraphics[scale=0.7]{diagrama2.png}
+\caption{Digrama do algoritmo que compara o desempenho entre o Autofaces Fracionário e o proposto.}
+\end{figure}
 
 \subsection{Resultados}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. 
 
-\includegraphics[scale=0.5]{resultados.png}
+
+\begin{figure}[!h] \centering 
+\includegraphics[scale=0.5]{resultados.png} 
+\caption{Resultados para os seis datasets} 
+\label{fig:Res} \end{figure} 
 
 \section{Conclusões}
 

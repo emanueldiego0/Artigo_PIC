@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.20)  31 OCT 2018 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.20)  6 NOV 2018 13:38
 entering extended mode
 **./Teste.tex
 (Teste.tex
@@ -27,6 +27,19 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
+("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb
+.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfont
+s.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 ("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
 y"
 Package: babel 2018/06/05 3.22 The Babel package
@@ -68,7 +81,7 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 ("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.
 sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 ("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
 s.sty"
@@ -90,36 +103,48 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
+)
+("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\anysize\anysize.
+sty"
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen106
+\@Rightmargin=\dimen107
+\@Topmargin=\dimen108
+\@Bottommargin=\dimen109
 ) (Teste.aux)
 \openout1 = `Teste.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
 
 ("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count90
-\scratchdimen=\dimen106
+\scratchdimen=\dimen110
 \scratchbox=\box26
 \nofMPsegments=\count91
 \nofMParguments=\count92
-\everyMPshowfont=\toks17
+\everyMPshowfont=\toks18
 \MPscratchCnt=\count93
-\MPscratchDim=\dimen107
+\MPscratchDim=\dimen111
 \MPnumerator=\count94
 \makeMPintoPDFobject=\count95
-\everyMPtoPDFconversion=\toks18
+\everyMPtoPDFconversion=\toks19
 )
 ("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopd
 f-base.sty"
@@ -184,62 +209,93 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 10.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 10.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--19
+("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+
+("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 14--21
 
  []
 
 
-Overfull \hbox (21.46237pt too wide) in paragraph at lines 12--19
-\OT1/cmr/bx/n/10.95 palavras-chave\OT1/cmr/m/n/10.95 : reduc~ao de di-men-si-o
--na-li-dade, PCA, Al-go-ritmo Genetico,
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+\OT1/cmr/m/n/10.95 re-pre-sen-ta-tiva dos da-dos ori-gi-nais.
  []
 
 [1
 
 {C:/Users/EMANUEL/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] [3] [4]
-<resultados.png, id=21, 813.0375pt x 478.03593pt>
-File: resultados.png Graphic file (type png)
-<use resultados.png>
-Package pdftex.def Info: resultados.png  used on input line 69.
-(pdftex.def)             Requested size: 406.51776pt x 239.01738pt.
+[2] [3]
+<diagrama1.png, id=22, 655.39856pt x 357.7365pt>
+File: diagrama1.png Graphic file (type png)
+<use diagrama1.png>
+Package pdftex.def Info: diagrama1.png  used on input line 139.
+(pdftex.def)             Requested size: 458.77586pt x 250.41383pt.
 
-Overfull \hbox (91.69218pt too wide) in paragraph at lines 69--70
-[][] 
+Overfull \hbox (3.53175pt too wide) in paragraph at lines 139--140
+ [][] 
  []
 
-[5] [6 <./resultados.png>] [7] (Teste.aux) ) 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<diagrama2.png, id=23, 677.98294pt x 310.30931pt>
+File: diagrama2.png Graphic file (type png)
+<use diagrama2.png>
+Package pdftex.def Info: diagrama2.png  used on input line 144.
+(pdftex.def)             Requested size: 474.58482pt x 217.21503pt.
+
+Overfull \hbox (19.34071pt too wide) in paragraph at lines 144--145
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resultados.png, id=24, 813.0375pt x 478.03593pt>
+File: resultados.png Graphic file (type png)
+<use resultados.png>
+Package pdftex.def Info: resultados.png  used on input line 154.
+(pdftex.def)             Requested size: 406.51776pt x 239.01738pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5 <./diagrama1.png> <./diagrama2.png>] [6 <./resultados.png>] (Teste.aux) 
+) 
 Here is how much of TeX's memory you used:
- 2014 strings out of 492973
- 29731 string characters out of 3125806
- 100921 words of memory out of 3000000
- 5871 multiletter control sequences out of 15000+200000
- 9110 words of font info for 32 fonts, out of 3000000 for 9000
+ 2347 strings out of 492973
+ 33877 string characters out of 3125806
+ 104702 words of memory out of 3000000
+ 6178 multiletter control sequences out of 15000+200000
+ 14298 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,856b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/EMANUEL/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EMANUEL/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/U
-sers/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EMANUEL/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EMANUEL/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Teste.pdf (7 pages, 185266 bytes).
+ 41i,10n,27p,856b,231s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EMANUEL/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EMANUEL/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
+/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/EMANUEL/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EMANUEL/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EM
+ANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
+fb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb>
+Output written on Teste.pdf (6 pages, 299807 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
