@@ -24,10 +24,10 @@ Este trabalho visa expor os resultados da modificação do algoritmo Autofaces F
 No contexto de redução de dimensionalidade, o termo \textit{dimensionalidade} se refere a quantidade de variáveis aleatórias que um determinado conjunto de dados possui. Assim, se uma amostra $x\textsubscript{i}$ é definida por
 
 $$
-x\textsubscript{i} = [\alpha\textsubscript{1},\alpha\textsubscript{2},...,\alpha\textsubscript{n}]
+x_i = [\alpha_1 ,\alpha_2 ,\ldots,\alpha_n],
 $$
 
-dizemos que a amostra $x\textsubscript{i}$ possui dimensionalidade $n$, sendo que $n \in \mathbb{N}\textsuperscript{*} $.\linebreak
+dizemos que a amostra $x_i$ possui dimensionalidade $n$, sendo que $n \in \mathbb{N}\textsuperscript{*} $.\linebreak
 \indent A redução de dimensionalidade acontece quando conseguimos diminuir o número de atributos do conjunto original de modo que ainda tenhamos uma versão que seja representativa dos dados originais.\linebreak
 \indent Para o Aprendizado de Máquina, a importância da redução de dimensionalidade consiste em poder submeter para os algoritmos apenas os atributos que sejam mais relevantes no que se refere ao manuseio dos dados.
 
@@ -37,70 +37,71 @@ Muitos métodos têm sido propostos a fim de melhorar a qualidade dos algoritmos
 
 \subsection{PCA}
 
-PCA (Principal Component Analysis, em português Análise dos Componentes Principais) é  uma técnica de redução de dimensionalidade que ao receber como entrada um dataset $D$ com dimensão $m$, produz uma projeção de $D$ no espaço de dimensionalidade $m\textsuperscript{'}$, sendo $m\textsuperscript{'} < m$.
+PCA (Principal Component Analysis, em português Análise dos Componentes Principais) é  uma técnica de redução de dimensionalidade que ao receber como entrada um dataset $D$ com dimensão $m$, produz uma projeção de $D$ no espaço de dimensionalidade $m'$, sendo $m' < m$.
 
 Seja $D$ uma matriz que contém os dados a serem reduzidos. Temos que a matriz $D$, contendo $n$ amostras é definida como
 
 $$
 D = \left[
 \begin{array}{l}
-x\textsubscript{1}\\
-x\textsubscript{2}\\
-x\textsubscript{3}\\
+x_1\\
+x_2\\
+x_3\\
 \vdots\\
-x\textsubscript{n}
+x_n
 \end{array}
 \right]
 $$
 
-Cada amostra $x\textsubscript{i}$ contém $m$ varíáveis, as quais chamamos de atributos. Desta forma temos
+Cada amostra $x_i$ contém $m$ varíáveis, as quais chamamos de atributos. Desta forma temos
 
 $$
-x\textsubscript{i} = \left[
+x_i = \left[
 \begin{array}{cccc}
-x\textsubscript{i1}, &
-x\textsubscript{i2}, &
+x_{i1}, &
+x_{i2}, &
 ..., &
-x\textsubscript{im}
+x_{im}
 \end{array}
 \right]
 $$
 
-O vetor médio $\overline{x}$ é do conjunto de dados é obtido através da fórmula:
+O vetor médio $\overline{x}$ é do conjunto de dados é obtido através da fórmula \ref{eq:media}.
 
-$$
-\overline{x} = \frac{1}{n} \Sigma x\textsubscript{j}
-$$
+\begin{equation}
+\overline{x} = \frac{1}{n} \Sigma x_j \label{eq:media}
+\end{equation}
 
 Subtraindo o vetor médio de cada amostra de $D$, teremos uma versão do dados centralizada na origem:
 
 $$
-D\textsuperscript{'} = \left[
+D' = \left[
 \begin{array}{l}
-(x\textsubscript{1} - \overline{x})\\
-(x\textsubscript{2} - \overline{x})\\
-(x\textsubscript{3} - \overline{x})\\
+(x_1 - \overline{x})\\
+(x_2 - \overline{x})\\
+(x_3 - \overline{x})\\
 \vdots\\
-(x\textsubscript{n} - \overline{x})
+(x_n - \overline{x})
 \end{array}
 \right]
 $$
 
-A partir de $D\textsuperscript{'}$ é possível obter a matriz de covariância dos dados. Essa matriz contém o valor da covariância entre cada par de atributos, bem como a variância de cada atributo na diagonal principal. Ela pode ser obtida através de
+A partir de $D'$ é possível obter a matriz de covariância dos dados. Essa matriz contém o valor da covariância entre cada par de atributos, bem como a variância de cada atributo na diagonal principal. Ela pode ser obtida através de
+
+\begin{equation}
+Cov(D') = \frac{1}{n} D'\textsuperscript{T} D' \label{eq:cov_mat}
+\end{equation}
+
+A matriz $Cov(D')$ será de ordem $m x m$.
+
+Cada coluna da matriz $Cov(D')$ é uma autovetor. Dessa forma temos que
+
 
 $$
-Cov(D\textsuperscript{'}) = \frac{1}{n} D\textsuperscript{'T} D\textsuperscript{'}
+Cov(D') = [\xi_1, \xi_2, ..., \xi_m]
 $$
 
-A matriz $Cov(D\textsuperscript{'})$ será de ordem $m x m$.
-
-Cada coluna da matriz $Cov(D\textsuperscript{'})$ é uma autovetor. Dessa forma temos que
-
-$$
-Cov(D\textsuperscript{'}) = [\xi\textsubscript{1}, \xi\textsubscript{2}, ..., \xi\textsubscript{m}]
-$$
-
-Onde para cada autovetor $\xi\textsubscript{i}$ existe um autovelor $\lambda\textsubscript{i}$ associado, o qual representa a variância daquele atributo.
+Onde para cada autovetor $\xi_i$ existe um autovelor $\lambda_i$ associado, o qual representa a variância daquele atributo.
 
 NÂO CONCLUIDO
 
@@ -127,8 +128,26 @@ O método proposto consiste em modificar o Autoface Fracionário por meio da apl
 Para a obtenção do vetor $R$, foi usado um Algoritmo Genético com o objetivo de se conseguir bons valores para o vetor e que por consequência melhorasse a qualidade da redução de dimensionalidade e por conseguinte a acurácia do algoritmo de classificação utilizado.
 \section{Experimentos}
 
+Datasets adotados nos experimentos podem ser conferidos na Tabela 1.
+
+\begin{table}[] \centering
+\scriptsize
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Base} & \multicolumn{1}{r|}{\textbf{Nº de amostras}} & \textbf{N º de atributos} & \textbf{Nº de classes} \\ \hline
+Yale Faces       & 10212                                        & 12123                     & 10                     \\ \hline
+Sheffield        & 12323                                        & 12323                     & 12                     \\ \hline
+AT\&T            & 12323                                        & 1223                      & 12                     \\ \hline
+Georgia Tech     & 123232                                       & 123213                    & 123                    \\ \hline
+Faces 95         & 2123123                                      & 1212323                   & 12323                  \\ \hline
+AR               & 123232                                       & 232323                    & 23                     \\ \hline
+FEI               & 123232                                       & 232323                    & 23                     \\ \hline
+\end{tabular}
+\caption{Bases de dados utilizadas nos experimentos.}
+\end{table}
+
 \subsection{Metodologia Adotada}
-A metodologia dos experimentos realizados para calcular os valores do vetor $R$ pode ser conferida no fluxograma da figura 1. Após a obtenção do vetor $R$, uma outro algoritmo é executado a fim de comparar os desempenhos do Autofaces Fracionário e do Autofaces Fracionário proposto. Esse algoritmo pode ser observado na figura 2.\\
+A metodologia dos experimentos realizados para calcular os valores do vetor $R$ pode ser conferida no fluxograma da Figura \ref{fig:diagrama1}. Após a obtenção do vetor $R$, uma outro algoritmo é executado a fim de comparar os desempenhos do Autofaces Fracionário e do Autofaces Fracionário proposto. Esse algoritmo pode ser observado na Figura \ref{fig:diagrama2}.\\
 \indent Os valores de componentes testados em cada execução do Algoritmo Genético foram os seguintes:
 
 $$c = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]$$
@@ -138,20 +157,21 @@ Assim, cada experimento executou um Algoritmo Genético 15 vezes, uma para cada 
 \begin{figure}[!h] \centering
 \includegraphics[scale=0.7]{diagrama1.png}
 \caption{Digrama do algoritmo genético utilizado para obter valores de $R$.}
+\label{fig:diagrama1}
 \end{figure}
 
 \begin{figure}[!h] \centering
 \includegraphics[scale=0.7]{diagrama2.png}
 \caption{Digrama do algoritmo que compara o desempenho entre o Autofaces Fracionário e o proposto.}
+\label{fig:diagrama2}
 \end{figure}
 
 \subsection{Resultados}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. 
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, lorem non faucibus condimentum, orci orci condimentum lectus, sit amet sollicitudin justo libero non dui. Resultados podem ser vistos nos gráficos da Figura \ref{fig:Res}
 
 \begin{figure}[!h] \centering 
-\includegraphics[scale=0.5]{resultados.png} 
+\includegraphics[scale=0.5]{resultados.png}
 \caption{Resultados para os seis datasets} 
 \label{fig:Res} \end{figure} 
 

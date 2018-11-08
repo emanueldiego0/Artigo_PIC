@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.20)  6 NOV 2018 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.20)  8 NOV 2018 06:39
 entering extended mode
 **./Teste.tex
 (Teste.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 "
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -21,17 +21,17 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
 y"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb
 .sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfont
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfont
 s.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
@@ -40,11 +40,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
 y"
 Package: babel 2018/06/05 3.22 The Babel package
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.d
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.d
 ef"
 File: switch.def 2018/06/05 3.22 Babel switching mechanism
 )
@@ -52,59 +52,59 @@ File: switch.def 2018/06/05 3.22 Babel switching mechanism
 * Local config file bblopts.cfg used
 *
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cf
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cf
 g"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-portuges\p
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-portuges\p
 ortuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.de
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.de
 f"
 File: babel.def 2018/06/05 3.22 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel
 .def")
 \bbl@dirlevel=\count89
 )
 \l@brazilian = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 ))
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
 x.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.
 sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphic
 s.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.st
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.st
 y"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\gra
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\gra
 phics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdf
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdf
 tex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\anysize\anysize.
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\anysize\anysize.
 sty"
 Package: anysize 1994/08/13 setting margin sizes
 
@@ -131,7 +131,7 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count90
@@ -146,39 +146,39 @@ mkii"
 \makeMPintoPDFobject=\count95
 \everyMPtoPDFconversion=\toks19
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopd
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopd
 f-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwa
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwa
 rerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.
 sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdef
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdef
 inekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcm
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcm
 ds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptio
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptio
 ns.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvset
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvset
 keys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexc
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexc
 mds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\iflua
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\iflua
 tex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
@@ -188,12 +188,12 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdfte
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdfte
 xcmds.sty"
 Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf
 .sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
@@ -211,13 +211,13 @@ G,.JBIG2,.JB2,.eps]
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 12.
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 "
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
-("C:\Users\EMANUEL\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+("C:\Users\Emanuel\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -232,70 +232,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
 [1
 
-{C:/Users/EMANUEL/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Emanuel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 [2] [3]
-<diagrama1.png, id=22, 655.39856pt x 357.7365pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 133.
+
+<diagrama1.png, id=24, 655.39856pt x 357.7365pt>
 File: diagrama1.png Graphic file (type png)
 <use diagrama1.png>
-Package pdftex.def Info: diagrama1.png  used on input line 139.
+Package pdftex.def Info: diagrama1.png  used on input line 158.
 (pdftex.def)             Requested size: 458.77586pt x 250.41383pt.
 
-Overfull \hbox (3.53175pt too wide) in paragraph at lines 139--140
+Overfull \hbox (3.53175pt too wide) in paragraph at lines 158--159
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<diagrama2.png, id=23, 677.98294pt x 310.30931pt>
+<diagrama2.png, id=25, 677.98294pt x 310.30931pt>
 File: diagrama2.png Graphic file (type png)
 <use diagrama2.png>
-Package pdftex.def Info: diagrama2.png  used on input line 144.
+Package pdftex.def Info: diagrama2.png  used on input line 164.
 (pdftex.def)             Requested size: 474.58482pt x 217.21503pt.
 
-Overfull \hbox (19.34071pt too wide) in paragraph at lines 144--145
+Overfull \hbox (19.34071pt too wide) in paragraph at lines 164--165
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<resultados.png, id=24, 813.0375pt x 478.03593pt>
+[4]
+<resultados.png, id=31, 813.0375pt x 478.03593pt>
 File: resultados.png Graphic file (type png)
 <use resultados.png>
-Package pdftex.def Info: resultados.png  used on input line 154.
+Package pdftex.def Info: resultados.png  used on input line 174.
 (pdftex.def)             Requested size: 406.51776pt x 239.01738pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] [5 <./diagrama1.png> <./diagrama2.png>] [6 <./resultados.png>] (Teste.aux) 
-) 
+[5 <./diagrama1.png> <./diagrama2.png>] [6 <./resultados.png>] (Teste.aux) ) 
 Here is how much of TeX's memory you used:
- 2347 strings out of 492973
- 33877 string characters out of 3125806
- 104702 words of memory out of 3000000
- 6178 multiletter control sequences out of 15000+200000
- 14298 words of font info for 55 fonts, out of 3000000 for 9000
+ 2361 strings out of 492973
+ 34251 string characters out of 3125806
+ 105734 words of memory out of 3000000
+ 6188 multiletter control sequences out of 15000+200000
+ 15564 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,27p,856b,231s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EMANUEL/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EMANUEL/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
-/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/EMANUEL/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EMANUEL/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EM
-ANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
-fb><C:/Users/EMANUEL/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb>
-Output written on Teste.pdf (6 pages, 299807 bytes).
+ 41i,11n,27p,856b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:
+/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/Emanuel/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Emanuel/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users
+/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Emanuel/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Emanue
+l/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
+:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/Emanuel/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Emanuel/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Emanuel/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Teste.pdf (6 pages, 338186 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
